@@ -1,0 +1,9 @@
+[Unit]
+Description=Alive Python test service
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/alive/alive.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
